@@ -1,0 +1,180 @@
+/* Shared Styles Start */
+
+body {
+  font-family: "Hind Vadodara", serif;
+  background-color: #fff;
+}
+
+/* Navbar styles start here*/
+.navbar-title {
+  color: #331b3b;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+.navbar-list {
+  width: 75%;
+}
+
+.navbar .navbar-nav {
+  width: 100%;
+  gap: 0 2rem;
+}
+
+/* .navbar .nav-item .nav-home {
+  font-weight: 600;
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+
+.navbar .nav-item .highlighted-text{
+    border-bottom: 4px solid #FDC221;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
+.navbar .nav-item .highlighted-text {
+  font-weight: 600;
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  position: relative;
+}
+.navbar .nav-item .highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 0.2rem;
+  background-color: #fdc221;
+}
+
+.navbar .nav-item .list-item {
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+
+.navbar-social-icons {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+.combo {
+  position: relative;
+  width: 3.8rem;
+  height: 4rem;
+}
+.combo .ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  stroke-width: 2px;
+  stroke: rgba(51, 27, 59, 0.64);
+}
+.combo .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #331b3b;
+}
+.combo .icon-1 {
+  width: 0.65rem;
+  height: 1.25rem;
+}
+.combo .icon-2 {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.combo .icon-3 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Banner styles start here */
+
+.banner .banner-content {
+  margin-top: 160px;
+}
+.banner .bold-text {
+  color: #331b3b;
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.8%;
+  letter-spacing: -0.87px;
+}
+
+.banner .regular-text {
+  color: #331b3b;
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 99.8%;
+  letter-spacing: -0.87px;
+}
+
+.banner .highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: #331b3b;
+  font-size: 5.45rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 98.8%;
+  letter-spacing: -0.87px;
+}
+
+.banner .highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 0.33em;
+  background-color: #fdc221;
+  z-index: -1;
+}
+
+.banner-description {
+  color: rgba(51, 27, 59, 0.66);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.3%;
+  letter-spacing: 0.34px;
+  width: 32.18rem;
+  height: 5.2rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.95rem;
+}
+
+button {
+  width: 207px;
+  height: 66px;
+  border-radius: 10px;
+  background: #331b3b;
+  color: #fff;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.3%;
+  letter-spacing: 0.34px;
+  text-transform: uppercase;
+}

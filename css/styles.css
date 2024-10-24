@@ -163,9 +163,9 @@ body {
   margin-bottom: 1.95rem;
 }
 
-button {
-  width: 207px;
-  height: 66px;
+#custom-btn {
+  width: 12.9rem;
+  height: 4.13rem;
   border-radius: 10px;
   background: #331b3b;
   color: #fff;
@@ -179,18 +179,18 @@ button {
 
 /* Banner images styles start here */
 
-.banner-images .banner-front-img img{
+.banner-images .banner-front-img img {
   position: absolute;
   bottom: -100;
   right: 10;
 }
-
 
 /* Business section styles */
 
 .business-section {
   margin-top: 9.25rem;
   position: relative;
+  margin-bottom: 6rem;
 }
 .business-section .business-section-img img {
   width: 85%;
@@ -265,15 +265,13 @@ button {
 
 .carousel-controller {
   display: flex;
-  gap: 0;
   position: relative;
-  top: 180px;
+  top: 235px;
   left: 10px;
-  justify-content: flex-start;
 }
-.col-2 {
-  padding-left: 7.5rem;
-  padding-right: 2.5rem;
+.col-1 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .control-button #custom-icon-left {
   width: 2rem;
@@ -282,8 +280,8 @@ button {
   width: 2rem;
 }
 .carousel-item {
-  width: 1200px;
-  transition: transform 1s linear;
+  width: 1280px;
+  transition: transform 2s linear;
 }
 .carousel-control-prev-icon {
   background-image: url(../assets/left.png);
@@ -293,11 +291,6 @@ button {
 }
 
 /* Card Styles */
-
-/* .cards-wrapper {
-  display: flex;
-  justify-content: center;
-} */
 
 .card {
   border-radius: 10px;
@@ -318,7 +311,7 @@ button {
   height: 3rem;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #FFEED4;
+  background: #ffeed4;
 }
 .card-image-3 {
   padding: 0.6rem;
@@ -326,7 +319,7 @@ button {
   height: 3rem;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #D4F0FF;;
+  background: #d4f0ff;
 }
 .card-image-4 {
   padding: 0.6rem;
@@ -334,7 +327,7 @@ button {
   height: 3rem;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #FFD4D4;
+  background: #ffd4d4;
 }
 .card-title {
   color: #331b3b;
@@ -355,3 +348,198 @@ button {
   letter-spacing: 0.3px;
 }
 
+/* About Us Styles */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.about-us-images {
+  padding-top: 5rem;
+}
+
+.about-us-images img {
+  width: 110%;
+}
+
+.about-us-content {
+  padding-left: 5.25rem;
+  padding-top: 8rem;
+}
+
+.about-bold-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.about-regular-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.about-highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+  z-index: 1;
+}
+.about-highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 0.9rem;
+  background-color: #fdc221;
+  z-index: -1;
+}
+
+/* Work Section Styles */
+.work-section {
+  margin-top: 9.25rem;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.work-section .work-section-img img {
+  width: 85%;
+  height: 48rem;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.work-section .work-section-content {
+  padding: 3.25rem 0.75rem 2rem 0.75rem;
+}
+
+.work-section .work-section-title {
+  padding-left: 3.25rem;
+  padding-bottom: 5rem;
+}
+
+.work-section .work-section-description {
+  padding-right: 4rem;
+  padding-bottom: 5rem;
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.3%; /* 24.871px */
+  letter-spacing: 0.34px;
+  margin: 0;
+}
+
+.work-section .work-bold-text {
+  color: #331b3b;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106.3%; /* 51.024px */
+  letter-spacing: -0.48px;
+}
+.work-section .work-regular-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.work-section .work-highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+  z-index: 1;
+}
+.work-section .work-highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 0.8rem;
+  background-color: #fdc221;
+  z-index: -1;
+}
+
+.work-section .work-section-content .work-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-clip: border-box;
+
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 26.25rem;
+  height: 23rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+}
+.work-section .work-section-content .work-card img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.work-section .work-section-content .work-card .work-card-title {
+  margin: 2.25rem 1.9rem;
+  display: flex;
+  align-items: center;
+}
+.work-section .work-section-content .work-card .work-card-title h1 {
+  color: #331b3b;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 146.3%; /* 35.112px */
+}
+
+.col-2 {
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+
+#outline-button {
+  width: 5.75rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #343434;
+  color: #331b3b;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 146.3%; /* 20.482px */
+}
+
+.work-section .work-carousel-controller {
+  display: flex;
+  position: relative;
+  top: 430px;
+  left: 70px;
+}
+.control-button #work-icon-left {
+  width: 2rem;
+}
+.control-button #work-icon-right {
+  width: 2rem;
+}

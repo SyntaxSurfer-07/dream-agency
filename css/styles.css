@@ -1,11 +1,16 @@
 /* Shared Styles Start */
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Hind Vadodara", serif;
-  background-color: #fff;
+  /* background-color: lightgray; */
 }
 
 /* Navbar styles start here*/
+#custom-nav-container {
+  padding-left: 0 !important;
+}
 .navbar-title {
   color: #331b3b;
   font-family: "Playfair Display", serif;
@@ -14,6 +19,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.24px;
+  padding: 0;
 }
 .navbar-list {
   width: 75%;
@@ -24,20 +30,6 @@ body {
   gap: 0 2rem;
 }
 
-/* .navbar .nav-item .nav-home {
-  font-weight: 600;
-  color: #331b3b;
-  font-size: 1rem;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.16px;
-}
-
-.navbar .nav-item .highlighted-text{
-    border-bottom: 4px solid #FDC221;
-    margin-bottom: 0;
-    padding-bottom: 0;
-} */
 .navbar .nav-item .highlighted-text {
   font-weight: 600;
   color: #331b3b;
@@ -109,12 +101,18 @@ body {
 
 /* Banner styles start here */
 
+.banner {
+  gap: 2rem;
+}
+
+/* Banner content styles start here */
+
 .banner .banner-content {
-  margin-top: 160px;
+  margin-top: 8rem;
 }
 .banner .bold-text {
   color: #331b3b;
-  font-size: 87px;
+  font-size: 5.43rem;
   font-style: normal;
   font-weight: 700;
   line-height: 99.8%;
@@ -123,7 +121,7 @@ body {
 
 .banner .regular-text {
   color: #331b3b;
-  font-size: 87px;
+  font-size: 5.43rem;
   font-style: normal;
   font-weight: 300;
   line-height: 99.8%;
@@ -147,7 +145,7 @@ body {
   bottom: 0;
   left: 0;
   width: 95%;
-  height: 0.33em;
+  height: 1.5rem;
   background-color: #fdc221;
   z-index: -1;
 }
@@ -178,3 +176,182 @@ button {
   letter-spacing: 0.34px;
   text-transform: uppercase;
 }
+
+/* Banner images styles start here */
+
+.banner-images .banner-front-img img{
+  position: absolute;
+  bottom: -100;
+  right: 10;
+}
+
+
+/* Business section styles */
+
+.business-section {
+  margin-top: 9.25rem;
+  position: relative;
+}
+.business-section .business-section-img img {
+  width: 85%;
+  height: 40rem;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.business-section .business-section-ellipse img {
+  width: 35%;
+  height: 40rem;
+  z-index: -5;
+  position: absolute;
+  right: -20px;
+  bottom: -200px;
+}
+
+.business-section .business-section-content {
+  padding: 3rem 0.75rem;
+}
+
+.business-section .business-section-title {
+  margin-bottom: 6rem;
+}
+
+.business-section .business-bold-text {
+  color: #331b3b;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106.3%; /* 51.024px */
+  letter-spacing: -0.48px;
+}
+.business-section .business-regular-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.business-section .business-highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+  z-index: 1;
+}
+.business-section .business-highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 0.9rem;
+  background-color: #fdc221;
+  z-index: -1;
+}
+
+/* Business section card styles */
+
+.carousel-inner {
+  padding: 1rem;
+}
+
+.carousel-controller {
+  display: flex;
+  gap: 0;
+  position: relative;
+  top: 180px;
+  left: 10px;
+  justify-content: flex-start;
+}
+.col-2 {
+  padding-left: 7.5rem;
+  padding-right: 2.5rem;
+}
+.control-button #custom-icon-left {
+  width: 2rem;
+}
+.control-button #custom-icon-right {
+  width: 2rem;
+}
+.carousel-item {
+  width: 1200px;
+  transition: transform 1s linear;
+}
+.carousel-control-prev-icon {
+  background-image: url(../assets/left.png);
+}
+.carousel-control-next-icon {
+  background-image: url(../assets/right-arrow.png);
+}
+
+/* Card Styles */
+
+/* .cards-wrapper {
+  display: flex;
+  justify-content: center;
+} */
+
+.card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+}
+.card-image-1 {
+  padding: 0.6rem;
+  width: 3.25rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ffded4;
+}
+.card-image-2 {
+  padding: 0.6rem;
+  width: 3.25rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFEED4;
+}
+.card-image-3 {
+  padding: 0.6rem;
+  width: 3.25rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D4F0FF;;
+}
+.card-image-4 {
+  padding: 0.6rem;
+  width: 3.25rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFD4D4;
+}
+.card-title {
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.3%; /* 21.968px */
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+}
+.card-description {
+  color: rgba(51, 27, 59, 0.66);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145.3%; /* 21.795px */
+  letter-spacing: 0.3px;
+}
+

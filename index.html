@@ -14,23 +14,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Dream Agency</title>
   </head>
 
   <body>
     <!-- Header Section -->
-    <header class="header">
+    <header class="container position-relative">
       <!-- Navbar start here -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse navbar-list" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active nav-home" aria-current="page" href="#"><span class="highlighted-text">Home</span></a>
+                <a class="nav-link active nav-home" aria-current="page" href="#"
+                  ><span class="highlighted-text">Home</span></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link list-item" href="#">About Us</a>
@@ -43,50 +53,335 @@
               </li>
             </ul>
           </div>
-          <div class="container d-flex justify-content-between align-items-center">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+            id="custom-nav-container"
+          >
             <a class="navbar-brand navbar-title" href="#">Dream Agency</a>
             <div class="navbar-social-icons">
-                <div class="combo">
-                    <img class="ellipse" src="./assets/Ellipse-8.png" alt="">
-                    <img class="icon icon-1" src="./assets/fb.png" alt="fb">
-                </div>
-                <div class="combo">
-                    <img class="ellipse" src="./assets/Ellipse-9.png" alt="">
-                    <img class="icon icon-2" src="./assets/linkedin.png" alt="linkedin">
-                </div>
-                <div class="combo">
-                    <img class="ellipse" src="./assets/Ellipse-10.png" alt="">
-                    <img class="icon icon-3" src="./assets/insta.png" alt="insta">
-                </div>
-              </div>    
+              <div class="combo">
+                <img class="ellipse" src="./assets/Ellipse-8.png" alt="" />
+                <img class="icon icon-1" src="./assets/fb.png" alt="fb" />
+              </div>
+              <div class="combo">
+                <img class="ellipse" src="./assets/Ellipse-9.png" alt="" />
+                <img
+                  class="icon icon-2"
+                  src="./assets/linkedin.png"
+                  alt="linkedin"
+                />
+              </div>
+              <div class="combo">
+                <img class="ellipse" src="./assets/Ellipse-10.png" alt="" />
+                <img class="icon icon-3" src="./assets/insta.png" alt="insta" />
+              </div>
+            </div>
           </div>
         </div>
       </nav>
 
-
       <!-- Banner Start here -->
-      <div class="container banner">
+      <div class="container banner d-flex">
+        <!-- Banner content Start here -->
         <div class="banner-content">
-            <h1>
-                <span class="bold-text">We Help you</span><br/>
-                <span class="regular-text">to grow your</span><br/>
-                <span class="highlighted-text">Business</span>
-              </h1>
-              <p class="banner-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <button>
-                GET STARTED
-              </button>
+          <h1>
+            <span class="bold-text">We Help you</span><br />
+            <span class="regular-text">to grow your</span><br />
+            <span class="highlighted-text">Business</span>
+          </h1>
+          <p class="banner-description">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button>GET STARTED</button>
+        </div>
+
+        <!-- Banner image start here -->
+        <div class="banner-images">
+          <img
+            class="banner-img position-absolute top-0 end-0"
+            src="./assets/Vector-1.png"
+            alt=""
+          />
+          <div class="banner-front-img">
+            <img src="./assets/two-people-ellipse.png" alt="">
           </div>
+        </div>
+
       </div>
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+      <div class="business-section">
+        <!-- Business section Left Background image -->
+        <div class="business-section-img">
+          <img src="./assets/Rectangle-2.png" alt="" />
+        </div>
+
+        <!-- Business section right Background image -->
+        <div class="business-section-ellipse">
+          <img src="./assets/Ellipse-13.png" alt="" />
+        </div>
+
+        <!-- Business section start -->
+        <div class="container business-section-content">
+          <!-- Business section title -->
+          <div class="text-center business-section-title">
+            <h1>
+              <span class="business-bold-text">What We Do</span><br />
+              <span class="business-regular-text">For Your</span>
+              <span class="business-highlighted-text">Business</span>
+            </h1>
+          </div>
+
+          <!-- Business section carousel -->
+          <div class="row">
+            <div class="col-1">
+              <div class="carousel-controller">
+                <div class="control-button">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                    id="custom-icon-left"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                </div>
+
+                <div class="control-button">
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                    id="custom-icon-right"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-11">
+              <div class="carousel-cards">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="cards-wrapper">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-1">
+                                <img src="./assets/web.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Website Design</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-2">
+                                <img src="./assets/computer.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Web Development</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-3">
+                                <img src="./assets/mobile.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">
+                                  Mobile APP Development
+                                </h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-4">
+                                <img src="./assets/rocket.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Marketing</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="cards-wrapper">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-1">
+                                <img src="./assets/web.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Website Design</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-2">
+                                <img src="./assets/computer.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Web Development</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-3">
+                                <img src="./assets/mobile.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">
+                                  Mobile APP Development
+                                </h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-4">
+                                <img src="./assets/rocket.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Marketing</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="cards-wrapper">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-1">
+                                <img src="./assets/web.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Website Design</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-2">
+                                <img src="./assets/computer.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Web Development</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-3">
+                                <img src="./assets/mobile.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">
+                                  Mobile APP Development
+                                </h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card shadow p-4">
+                              <div class="card-image-4">
+                                <img src="./assets/rocket.png" alt="" />
+                              </div>
+                              <div class="card-content">
+                                <h1 class="card-title">Marketing</h1>
+                                <p class="card-description">
+                                  Lorem Ipsum has been the industry's standard
+                                  dummy text ever since the 1500s.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer Section -->
-    <footer>
-        <br><br><br><br><br>
-    </footer>
+    <footer><br /><br /><br /><br /><br /></footer>
 
     <script src="./js/bootstrap.bundle.js"></script>
   </body>

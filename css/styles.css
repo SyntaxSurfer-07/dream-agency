@@ -369,7 +369,6 @@ body {
   padding-top: 8rem;
 }
 
-
 /* Work Section Styles */
 .work-section {
   margin-top: 9.25rem;
@@ -473,11 +472,112 @@ body {
 
 /* Testimonials styles start here */
 
-.testimonials .testimonials-card-description{
-  color: #331B3B;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 159.3%; /* 25.488px */
-letter-spacing: 0.32px;
+.testimonials .testimonials-card-description {
+  color: #331b3b;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+}
+
+/* Footer Section Styles */
+.footer-section {
+  background-color: black;
+  border-radius: 0px 150px 0px 0px;
+  padding: 4.25rem 3.25rem;
+}
+
+.footer-title {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.footer-description {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+  padding-right: 8rem;
+}
+
+.form-title {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.email-form {
+  display: flex;
+}
+
+.email-form input::placeholder {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.email-input {
+  padding: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #fff;
+  outline: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+  width: 50%;
+  border-radius: 0;
+}
+
+.email-input:focus {
+  padding: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #fff;
+  outline: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.3%; 
+  letter-spacing: 0.32px;
+  width: 50%;
+  border-radius: 0;
+}
+
+.send-btn{
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 159.3%; /* 25.488px */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem;
+}
+
+.location{
+  padding-top: 1rem;
+  padding-left: 5rem;
 }

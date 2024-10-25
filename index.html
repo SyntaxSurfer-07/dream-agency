@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Dream Agency</title>
   </head>
@@ -85,9 +86,9 @@
         <!-- Banner content Start here -->
         <div class="banner-content">
           <h1>
-            <span class="bold-text">We Help you</span><br />
-            <span class="regular-text">to grow your</span><br />
-            <span class="highlighted-text">Business</span>
+            <span class="banner-bold-text">We Help you</span><br />
+            <span class="banner-regular-text">to grow your</span><br />
+            <span class="banner-highlighted-text">Business</span>
           </h1>
           <p class="banner-description">
             Lorem Ipsum has been the industry's standard dummy text ever since
@@ -114,7 +115,7 @@
     <!-- Main Section -->
     <main>
       <!-- Business Section Start here -->
-      <div class="business-section">
+      <section class="business-section">
         <!-- Business section Left Background image -->
         <div class="business-section-img">
           <img src="./assets/Rectangle-2.png" alt="" />
@@ -130,9 +131,9 @@
           <!-- Business section title -->
           <div class="text-center business-section-title">
             <h1>
-              <span class="business-bold-text">What We Do</span><br />
-              <span class="business-regular-text">For Your</span>
-              <span class="business-highlighted-text">Business</span>
+              <span class="bold-text">What We Do</span><br />
+              <span class="regular-text">For Your</span>
+              <span class="highlighted-text">Business</span>
             </h1>
           </div>
 
@@ -384,38 +385,40 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- About Us Section Start here -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-us-images">
-            <img src="./assets/young-people-ellipse.png" alt="" />
-          </div>
-          <div class="col-lg-6 about-us-content">
-            <h1>
-              <span class="about-bold-text">About Us</span><br />
-              <span class="about-regular-text">Fake or</span>
-              <span class="about-highlighted-text">Real</span>
-            </h1>
-            <p class="banner-description">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-            <p class="banner-description">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </p>
-            <button id="custom-btn">EXPLORE MORE</button>
+      <section class="about-us">
+        <div class="container">
+          <div class="row row-layout">
+            <div class="col-md-6 about-us-images">
+              <img src="./assets/young-people-ellipse.png" alt="" />
+            </div>
+            <div class="col-md-6 about-us-content">
+              <h1>
+                <span class="bold-text">About Us</span><br />
+                <span class="regular-text">Fake or</span>
+                <span class="highlighted-text">Real</span>
+              </h1>
+              <p class="banner-description">
+                Lorem Ipsum has been the industry's standard dummy text ever since
+                the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+              </p>
+              <p class="banner-description">
+                Lorem Ipsum has been the industry's standard dummy text ever since
+                the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+              </p>
+              <button id="custom-btn">EXPLORE MORE</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Recent Work Section Start Here -->
-      <div class="work-section">
-        <!-- Business section right Background image -->
+      <!-- Work Section Start Here -->
+      <section class="work-section">
+        <!-- work section right Background image -->
         <div class="work-section-img">
           <img src="./assets/Rectangle-13.png" alt="" />
         </div>
@@ -423,16 +426,16 @@
         <!-- Work section Content start -->
         <div class="container work-section-content">
           <div class="row">
-            <div class="col-lg-6 work-section-title">
+            <div class="col-md-6 work-section-title">
               <div class="text-start">
                 <h1>
-                  <span class="work-bold-text">Our Recent Work</span><br />
-                  <span class="work-regular-text">By Our</span>
-                  <span class="work-highlighted-text">Experts</span>
+                  <span class="bold-text">Our Recent Work</span><br />
+                  <span class="regular-text">By Our</span>
+                  <span class="highlighted-text">Experts</span>
                 </h1>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <p class="work-section-description">
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               </p>
@@ -441,7 +444,6 @@
 
           <!-- work section carousel -->
           <div class="row">
-
             <!-- Carousel Controller -->
             <div class="col-2">
               <div class="work-carousel-controller">
@@ -478,7 +480,7 @@
                 </div>
               </div>
             </div>
-            <!-- Carousel Cards -->
+            <!-- Work Carousel Cards -->
             <div class="col-10">
               <div class="carousel-cards">
                 <div id="carouselWork" class="carousel slide">
@@ -486,7 +488,7 @@
                     <!-- Carousel Item -->
                     <div class="carousel-item active">
                       <div class="cards-wrapper">
-                        <div class="row gx-5 work-card-gap">
+                        <div class="row gx-5">
 
                           <div class="col-md-4">
                             <div class="work-card shadow p-3">
@@ -513,15 +515,15 @@
                             <div class="work-card shadow p-3">
                               <div class="row">
                                 <div class="col-9">
-                                  <img src="./assets/best-free-design.png" alt="">
+                                  <img src="./assets/premium-website.png" alt="">
                                 </div>
                                 <div class="col-3">
-                                  <img src="./assets/best-free-design-long.png" alt="">
+                                  <img src="./assets/premium-website-long.png" alt="">
                                 </div>
                               </div>
                               <div class="row work-card-title">
                                 <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
+                                  <h1 class="text-start">Goldcrown Labs</h1>
                                 </div>
                                 <div class="col-3">
                                   <button id="outline-button">View Work</button>
@@ -542,78 +544,7 @@
                               </div>
                               <div class="row work-card-title">
                                 <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
-                                </div>
-                                <div class="col-3">
-                                  <button id="outline-button">View Work</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="cards-wrapper">
-                        <div class="row gx-5 work-card-gap">
-
-                          <div class="col-md-4">
-                            <div class="work-card shadow p-3">
-                              <div class="row">
-                                <div class="col-9">
-                                  <img src="./assets/best-free-design.png" alt="">
-                                </div>
-                                <div class="col-3">
-                                  <img src="./assets/best-free-design-long.png" alt="">
-                                </div>
-                              </div>
-                              <div class="row work-card-title">
-                                <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
-                                </div>
-                                <div class="col-3">
-                                  <button id="outline-button">View Work</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="work-card shadow p-3">
-                              <div class="row">
-                                <div class="col-9">
-                                  <img src="./assets/best-free-design.png" alt="">
-                                </div>
-                                <div class="col-3">
-                                  <img src="./assets/best-free-design-long.png" alt="">
-                                </div>
-                              </div>
-                              <div class="row work-card-title">
-                                <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
-                                </div>
-                                <div class="col-3">
-                                  <button id="outline-button">View Work</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="work-card shadow p-3">
-                              <div class="row">
-                                <div class="col-9">
-                                  <img src="./assets/best-free-design.png" alt="">
-                                </div>
-                                <div class="col-3">
-                                  <img src="./assets/best-free-design-long.png" alt="">
-                                </div>
-                              </div>
-                              <div class="row work-card-title">
-                                <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
+                                  <h1 class="text-start">Close Concierge</h1>
                                 </div>
                                 <div class="col-3">
                                   <button id="outline-button">View Work</button>
@@ -655,6 +586,27 @@
                             <div class="work-card shadow p-3">
                               <div class="row">
                                 <div class="col-9">
+                                  <img src="./assets/premium-website.png" alt="">
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/premium-website-long.png" alt="">
+                                </div>
+                              </div>
+                              <div class="row work-card-title">
+                                <div class="col-9">
+                                  <h1 class="text-start">Goldcrown Labs</h1>
+                                </div>
+                                <div class="col-3">
+                                  <button id="outline-button">View Work</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="work-card shadow p-3">
+                              <div class="row">
+                                <div class="col-9">
                                   <img src="./assets/best-free-design.png" alt="">
                                 </div>
                                 <div class="col-3">
@@ -663,7 +615,7 @@
                               </div>
                               <div class="row work-card-title">
                                 <div class="col-9">
-                                  <h1 class="text-start">UI Shop</h1>
+                                  <h1 class="text-start">Close Concierge</h1>
                                 </div>
                                 <div class="col-3">
                                   <button id="outline-button">View Work</button>
@@ -671,6 +623,14 @@
                               </div>
                             </div>
                           </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="cards-wrapper">
+                        <div class="row gx-5">
 
                           <div class="col-md-4">
                             <div class="work-card shadow p-3">
@@ -693,6 +653,48 @@
                             </div>
                           </div>
 
+                          <div class="col-md-4">
+                            <div class="work-card shadow p-3">
+                              <div class="row">
+                                <div class="col-9">
+                                  <img src="./assets/premium-website.png" alt="">
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/premium-website-long.png" alt="">
+                                </div>
+                              </div>
+                              <div class="row work-card-title">
+                                <div class="col-9">
+                                  <h1 class="text-start">Goldcrown Labs</h1>
+                                </div>
+                                <div class="col-3">
+                                  <button id="outline-button">View Work</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="work-card shadow p-3">
+                              <div class="row">
+                                <div class="col-9">
+                                  <img src="./assets/best-free-design.png" alt="">
+                                </div>
+                                <div class="col-3">
+                                  <img src="./assets/best-free-design-long.png" alt="">
+                                </div>
+                              </div>
+                              <div class="row work-card-title">
+                                <div class="col-9">
+                                  <h1 class="text-start">Close Concierge</h1>
+                                </div>
+                                <div class="col-3">
+                                  <button id="outline-button">View Work</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -703,7 +705,54 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Testimonials Section Start Here -->
+      <section class="testmonials">
+        <div class="container my-5 py-5">
+          <div class="testimonials-content pb-5">
+            <div class="row text-center">
+              <h1>
+                <span class="bold-text">Our Testimonials</span><br />
+                <span class="regular-text">What Our Clients Are </span>
+                <span class="highlighted-text">Saying</span>
+              </h1>
+            </div>
+          </div>
+          <div class="testimonials-card">
+            <div class="row justify-content-evenly">
+              <div class="col-md-5">
+                <div class="card p-5">
+                  <div class="testimonials-card-icon">
+                    <img src="./assets/quotation.svg" alt="">
+                  </div>
+                  <div class="testimonials-card-description py-3 ps-4 pe-5">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                      <div class="clients-name d-flex align-items-center gap-2">
+                        <img src="./assets/dash.png" alt="">
+                        <strong>UI Soup</strong>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="card p-5">
+                  <div class="testimonials-card-icon">
+                    <img src="./assets/quotation.svg" alt="">
+                  </div>
+                  <div class="testimonials-card-description py-3 ps-4 pe-5">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                      <div class="clients-name d-flex align-items-center gap-2">
+                        <img src="./assets/dash.png" alt="">
+                        <strong>UI Soup</strong>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Section -->

@@ -2,9 +2,47 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Hind Vadodara", serif;
-  /* background-color: lightgray; */
+}
+
+.bold-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.regular-text {
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+}
+.highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: #331b3b;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.3%;
+  letter-spacing: -0.48px;
+  z-index: 1;
+}
+.highlighted-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 0.9rem;
+  background-color: #fdc221;
+  z-index: -1;
 }
 
 /* Navbar styles start here*/
@@ -110,7 +148,7 @@ body {
 .banner .banner-content {
   margin-top: 8rem;
 }
-.banner .bold-text {
+.banner .banner-bold-text {
   color: #331b3b;
   font-size: 5.43rem;
   font-style: normal;
@@ -119,7 +157,7 @@ body {
   letter-spacing: -0.87px;
 }
 
-.banner .regular-text {
+.banner .banner-regular-text {
   color: #331b3b;
   font-size: 5.43rem;
   font-style: normal;
@@ -128,7 +166,7 @@ body {
   letter-spacing: -0.87px;
 }
 
-.banner .highlighted-text {
+.banner .banner-highlighted-text {
   position: relative;
   display: inline-block;
   color: #331b3b;
@@ -139,7 +177,7 @@ body {
   letter-spacing: -0.87px;
 }
 
-.banner .highlighted-text::before {
+.banner .banner-highlighted-text::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -218,48 +256,10 @@ body {
   margin-bottom: 6rem;
 }
 
-.business-section .business-bold-text {
-  color: #331b3b;
-  text-align: center;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 106.3%; /* 51.024px */
-  letter-spacing: -0.48px;
-}
-.business-section .business-regular-text {
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-}
-.business-section .business-highlighted-text {
-  position: relative;
-  display: inline-block;
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-  z-index: 1;
-}
-.business-section .business-highlighted-text::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  height: 0.9rem;
-  background-color: #fdc221;
-  z-index: -1;
-}
-
 /* Business section card styles */
 
 .carousel-inner {
+  max-width: 1280px;
   padding: 1rem;
 }
 
@@ -281,7 +281,7 @@ body {
 }
 .carousel-item {
   width: 1280px;
-  transition: transform 2s linear;
+  transition: transform 2s ease;
 }
 .carousel-control-prev-icon {
   background-image: url(../assets/left.png);
@@ -350,7 +350,7 @@ body {
 
 /* About Us Styles */
 
-.row {
+.row-layout {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -369,43 +369,6 @@ body {
   padding-top: 8rem;
 }
 
-.about-bold-text {
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-}
-.about-regular-text {
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-}
-.about-highlighted-text {
-  position: relative;
-  display: inline-block;
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-  z-index: 1;
-}
-.about-highlighted-text::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  height: 0.9rem;
-  background-color: #fdc221;
-  z-index: -1;
-}
 
 /* Work Section Styles */
 .work-section {
@@ -421,6 +384,7 @@ body {
   top: 0;
   right: 0;
 }
+
 .work-section .work-section-content {
   padding: 3.25rem 0.75rem 2rem 0.75rem;
 }
@@ -442,51 +406,12 @@ body {
   margin: 0;
 }
 
-.work-section .work-bold-text {
-  color: #331b3b;
-  text-align: center;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 106.3%; /* 51.024px */
-  letter-spacing: -0.48px;
-}
-.work-section .work-regular-text {
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-}
-.work-section .work-highlighted-text {
-  position: relative;
-  display: inline-block;
-  color: #331b3b;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 106.3%;
-  letter-spacing: -0.48px;
-  z-index: 1;
-}
-.work-section .work-highlighted-text::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  height: 0.8rem;
-  background-color: #fdc221;
-  z-index: -1;
-}
-
 .work-section .work-section-content .work-card {
   position: relative;
   display: flex;
   flex-direction: column;
   background-clip: border-box;
-
+  flex-wrap: nowrap;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 26.25rem;
@@ -495,10 +420,12 @@ body {
   background: #fff;
   box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
 }
+
 .work-section .work-section-content .work-card img {
   border-radius: 15px;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .work-section .work-section-content .work-card .work-card-title {
   margin: 2.25rem 1.9rem;
@@ -542,4 +469,15 @@ body {
 }
 .control-button #work-icon-right {
   width: 2rem;
+}
+
+/* Testimonials styles start here */
+
+.testimonials .testimonials-card-description{
+  color: #331B3B;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 159.3%; /* 25.488px */
+letter-spacing: 0.32px;
 }
